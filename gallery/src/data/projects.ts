@@ -7,11 +7,12 @@ export const projectsData: ProjectMetadata[] = [
     name: 'Calculator',
     slug: 'calculator',
     description: 'A responsive digital calculator supporting standard arithmetic, decimal formatting, keyboard inputs, and memory history.',
-    status: 'in-progress',
+    status: 'completed',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
     category: 'Utility',
     difficulty: 'Beginner',
     path: 'projects/01-calculator',
+    demoUrl: 'http://localhost:3001',
     features: ['Basic & scientific operations', 'Keyboard shortcuts', 'Calculation history log', 'Error boundary & overflow handling'],
   },
   {

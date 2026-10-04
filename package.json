@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "npm --prefix gallery run dev",
     "build": "npm --prefix gallery run build",
-    "preview": "npm --prefix gallery run preview"
+    "preview": "npm --prefix gallery run preview",
+    "dev:calc": "npm --prefix projects/01-calculator run dev",
+    "build:calc": "npm --prefix projects/01-calculator run build"
   },
   "keywords": [
     "web-development",
