@@ -1,0 +1,21 @@
+{
+  "name": "40-web-projects",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A curated collection of 40 diverse web applications built in a single monorepo.",
+  "scripts": {
+    "dev": "npm --prefix gallery run dev",
+    "build": "npm --prefix gallery run build",
+    "preview": "npm --prefix gallery run preview"
+  },
+  "keywords": [
+    "web-development",
+    "portfolio",
+    "projects",
+    "gallery",
+    "react",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT"
+}

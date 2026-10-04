@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE/editor files
+.vscode/
+.idea/
