@@ -132,17 +132,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
       {/* Button for opening the project */}
       <div className="p-4 sm:px-6 bg-slate-950/50 border-t border-slate-800/60 flex items-center justify-between">
         {isCompleted ? (
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation();
-              onSelect(project);
-            }}
+          <a
+            href={project.demoUrl || '#'}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 transition-all shadow-md shadow-emerald-900/20 active:scale-[0.98]"
           >
-            <span>Open Project</span>
+            <span>Launch App</span>
             <ExternalLink className="w-4 h-4" />
-          </button>
+          </a>
         ) : isInProgress ? (
           <button
             type="button"

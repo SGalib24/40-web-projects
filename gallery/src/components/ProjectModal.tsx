@@ -8,7 +8,8 @@ import {
   Hammer, 
   Terminal,
   Layers,
-  ArrowRight
+  ArrowRight,
+  ExternalLink
 } from 'lucide-react';
 import { ProjectMetadata } from '../types/project';
 
@@ -168,6 +169,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             >
               Close
             </button>
+            {isCompleted && (
+              <a
+                href={project.demoUrl || 'http://localhost:3001'}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-emerald-500 text-white hover:bg-emerald-400 transition-colors shadow-md shadow-emerald-500/20"
+              >
+                <span>Launch App</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
             {isInProgress && (
               <button
                 onClick={() => {
